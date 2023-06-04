@@ -1,0 +1,59 @@
+This is a basic git tutorial
+-------------------------------------------------------------------------------------------------
+
+so i found some basic commands one needs to use to simply perform git operations:
+
+
+
+step1: create a local directory on your pc (known as "working directory" or "workspace") , mkdir foldername command can be used.
+
+step2: use git init command to initialise it as local repository, this creates a .git folder (hidden inside working dir), so essentially
+this .git folder is your local repo.
+
+step3: now you can create any file in it like to create a text file touch filename.txt command can be used
+but this file is created inside working directory not inside repo.so till now version controlling/tracking is not happening becoz
+until the file is not inside repo, git doesn't know anything what is happening.
+
+step4: to add file in repo, you must add it to "staging area" (from here onwards tracking of files starts), which is a part of repo.
+for this purpose use command git add filename (for a perticular file) or use git add -A (for all files). 
+repo includes two main parts- staging area and commit history. 
+
+step5: use git commit -m 'your message here' to commit changes you made i.e. saving the changes in your local repo before pushing it
+
+step6: use git remote ,it should show nothing initially. go to your github account and create a new repo and from there you will find a link where you can push your local repo to make it avilable remotely.copy link and proceed as 
+
+step7: git remote add origin https://github.com/yourgitusername/repo name created on github.git
+now git remote will show origin
+
+step8: git push -u origin master  (master is default branch name , this may be different. sometimes as "main")
+this pushes your local repo on a remote server or cloud storage.
+
+
+----------------------------------------------------------------------------------------------------------------------------
+
+In short if you have made a local repo on your system and a corresponding repo on github for your project then every time you or anyone
+collaborating in project makes a change , he/she only needs to do 4 steps:
+
+make changes--> git add -A or git add filename --> git commit -m 'any message' --> git push -u origin master
+
+
+
+
+AND THAT's IT  :)
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+some more to know:
+
+1. git branch ---> shows all the branches of a repo
+2. git checkout branchname---> to set your branch for repo
+3. git remote set-url origin url ----> to set origin for a new url if you are willing to change url but alias is origin you want to keep
+
+ 
+
+
+
+
+
+
+ 
