@@ -48,10 +48,11 @@ some more to know:
 1. git branch ---> shows all the branches of a repo
 2. git checkout branchname---> to set your branch for repo
 3. git remote set-url origin url ----> to set origin for a new url if you are willing to change url but alias is origin you want to keep
-
- 
-
-
+4. git config --global user.name ---> check global username
+   git config --global user.name "write username" ---> set global username
+5. git config user.name ---> check local username
+   git config user.name "write username" ---> set local username
+6.just write email in place of name to do the same operations on useremail.If locals are not set then global will be displayed
 
 
 
