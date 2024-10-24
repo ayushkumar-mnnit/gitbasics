@@ -1,8 +1,5 @@
-This is a basic git tutorial
+ some basic commands one needs to know to simply perform git operations:
 -------------------------------------------------------------------------------------------------
-
-so i found some basic commands one needs to use to simply perform git operations:
-
 
 
 step1: create a local directory on your pc (known as "working directory" or "workspace") , mkdir foldername command can be used.
@@ -38,12 +35,34 @@ make changes--> git add -A or git add filename --> git commit -m 'any message' -
 
 
 
-
 AND THAT's IT  :)
 
 -----------------------------------------------------------------------------------------------------------------------------
 
 some more to know:
+
+
+1. git reset or git restore --staged   ----> to unstage all the changes which were going to be commited
+2. git reset filname or git restore --staged filename  ---> to unstage a particular file from staging area.
+3. git pull remote_name branch_name   ---> to pull the changes. ex. git pull origin master
+
+if there are some conflicts like your local and remote repo is having some diff. then Vim editor may open up to resolve the conflicts
+
+When Vim opens after a git pull, it usually indicates that Git needs you to update the merge message. You can either save and exit or exit without save
+
+To Save and Exit:
+
+Press i to enter insert mode and make any changes (if needed).
+Press Esc to exit insert mode.
+Type :wq and press Enter to save and quit.
+
+To Exit Without Saving:
+
+Press Esc to ensure you're not in insert mode.
+Type :q! and press Enter to quit without saving.
+
+
+--------------------------------------------------------------------------------------------------------------------------------
 
 1. git branch ---> shows all the branches of a repo
 2. git checkout branchname---> to set your branch for repo
@@ -52,9 +71,7 @@ some more to know:
    git config --global user.name "write username" ---> set global username
 5. git config user.name ---> check local username
    git config user.name "write username" ---> set local username
-6.just write email in place of name to do the same operations on useremail.If locals are not set then global will be displayed
-
-
+6. just write email in place of name to do the same operations on useremail.If locals are not set then global will be displayed
 
 
  
